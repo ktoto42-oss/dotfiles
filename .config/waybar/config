@@ -4,8 +4,8 @@
     "height": 34,
     "spacing": 4,
     "modules-left": ["hyprland/workspaces", "hyprland/window"],
-    "modules-center": ["custom/chromium", "custom/telegram", "custom/vscodium", "custom/screenshot"],
-    "modules-right": ["wireplumber", "network", "clock"],
+    "modules-center": ["custom/music", "custom/chromium", "custom/telegram", "custom/vscodium", "custom/screenshot"],
+    "modules-right": ["wireplumber", "network", "clock", "tray"],
 
     "hyprland/workspaces": {
         "format": "{name}",
@@ -34,17 +34,23 @@
     },
     "custom/telegram": {
        "format": "   ",
-       "on-click": "Telegram",
-       "tooltip-format": "Telegram"
+       "on-click": "AyuGram",
+       "tooltip-format": "AyuGram"
     },
     "custom/vscodium": {
        "format": "   ",
-       "on-click": "sudo -E vscodium --no-sandbox --user-data-dir",
+       "on-click": "vscodium",
        "tooltip-format": "VScodium"
     },
     "custom/screenshot": {
        "format": "   ",
        "on-click": "hyprshot -m region",
        "tooltip-format": "hyprchot"
-    }
+    },
+    "custom/music": {
+       "format": "   ",
+       "on-click": "audiotube --style breeze-dark",
+       "tooltip-format": "yt-music"
+}		
 }
+    
